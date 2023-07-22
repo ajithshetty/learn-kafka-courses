@@ -1,1 +1,9 @@
-.idea
+# Default ignored files
+.idea/
+.gradle/
+build/
+logs
+backup
+streams.properties
+ccloud.properties
+*.log
