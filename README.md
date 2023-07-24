@@ -7,7 +7,7 @@ And we will only be working on submodule [kafka-streams](https://github.com/conf
 This is the code repo containing the full solutions to the exercises
 for the Kafka Streams course.
 ## Highlight
-####The main idea being, to use the local docker to setup and execute each of the processes including schema registry.
+#### The main idea being, to use the local docker to setup and execute each of the processes including schema registry.
 
 It's recommended to watch the [Basic Operations lecture](https://developer.confluent.io/learn-kafka/kafka-streams/basic-operations/) and the [Hands On: Basic Operations](https://developer.confluent.io/learn-kafka/kafka-streams/hands-on-basic-operations/) videos first.
 
