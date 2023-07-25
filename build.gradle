@@ -55,6 +55,7 @@ test {
 
 var basePackage = 'io.confluent.developer.'
 def exerciseMap = [
+                   tickets: basePackage + 'tickets.TicketsStreams',
                    list: basePackage + 'list.StreamsGroupList',
                    develop: basePackage + 'develop.RunningAverage',
                    logingroup: basePackage + 'logingroup.StreamsLoginGroup',

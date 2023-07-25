@@ -1,0 +1,1 @@
+docker-compose exec spark-master sh /opt/spark-apps/streaming/submit_job.sh

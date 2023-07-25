@@ -1,0 +1,10 @@
+spark: unprocessed
+destination_format: json
+s3:
+  url: http://minio:9000
+  access_key: minioadmin
+  secret_key: minioadmin
+  base_bucket: kafka-topic-data/
+kafka:
+  server: broker:29092
+  topic: basic-input-streams
