@@ -99,14 +99,11 @@ public class RunningAverage {
                                    Properties envProps) {
 
 
-        System.out.println("1111...............");
         final String ratingTopicName = envProps.getProperty("running-average.input.ratings.topic.name");
         final String avgRatingsTopicName = envProps.getProperty("running-average.output.rating-averages.topic.name");
-        System.out.println("222...............");
         KStream<Long, Rating> ratingStream = builder.stream(ratingTopicName,
                 Consumed.with(Serdes.Long(), getRatingSerde(envProps)))
                 .peek((key, value) -> System.out.println("Incoming record - key " + key + " value " + value));
-        System.out.println("3333...............");
 
         getRatingAverageTable(ratingStream, avgRatingsTopicName, getCountAndSumSerde(envProps));
 

@@ -1,0 +1,36 @@
+{
+  "namespace": "io.confluent.developer.avro",
+  "type": "record",
+  "name": "Bank",
+  "fields": [
+    {
+      "name": "account_id",
+      "type": "long"
+    },
+    {
+      "name": "time",
+      "type": "long"
+    },
+    {
+      "name": "withdraw",
+      "type": "double"
+    },
+    {
+      "name": "balance",
+      "type": "double"
+    },
+    {
+      "name": "bank_transaction_state",
+      "type": {
+        "type": "enum",
+        "name": "state",
+        "symbols": [
+          "CREATED",
+          "APPROVED",
+          "REJECTED"
+        ],
+        "default": "CREATED"
+      },"default": "CREATED"
+    }
+  ]
+}
