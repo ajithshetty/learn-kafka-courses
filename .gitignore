@@ -8,3 +8,4 @@ streams.properties
 ccloud.properties
 *.log
 buckets
+src/main/java/io/confluent/developer/jsonbank
